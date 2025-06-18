@@ -1,26 +1,426 @@
-@import "tailwindcss";
+@charset "UTF-8";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  font-family: sans-serif;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #b6bbf6;
+}
+
+h1 {
+  color: rgb(113, 174, 227);
+  font-family: "Meiryo";
+  text-shadow: 2px 3px 3px lightblue;
+}
+
+h2 {
+  color: blue;
+  background-color: #8c95fa;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  border-radius: 5px;
+}
+
+.wrapper {
+  margin: 0 auto 0 auto;
+  max-width: 950px;
+}
+
+.flexdisplay1 {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#logo {
+  text-align: center;
+  width: 100px;
+  height: 100px;
+}
+
+.urladjustimage {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+}
+
+#title {
+  text-align: center;
+  width: calc(100% - 100px);
+  height: 100px;
+  line-height: 100px;
+  font-size: 5vw;
+  letter-spacing: 5px;
+}
+
+.flexdisplay2 {
+  padding-left: 0px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.level {
+  text-align: center;
+  list-style: none;
+  width: 13%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 1vw;
+}
+
+#home {
+  background-color: lightgreen;
+  border-radius: 10px;
+}
+
+#gradefive {
+  background-color: lightpink;
+  border-radius: 10px;
+}
+
+#gradefour {
+  background-color: rgb(239, 219, 182);
+  border-radius: 10px;
+}
+
+#gradethree {
+  background-color: lightyellow;
+  border-radius: 10px;
+}
+
+#gradepretwo {
+  background-color: rgb(193, 228, 228);
+  border-radius: 10px;
+}
+
+#gradetwo {
+  background-color: lightblue;
+  border-radius: 10px;
+}
+
+#gradepreone {
+  background-color: rgb(160, 101, 101);
+  border-radius: 10px;
+}
+
+#gradeone {
+  background-color: rgb(117, 83, 83);
+  border-radius: 10px;
+}
+
+.flexdisplay3 {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+}
+
+#lefttable {
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 50%;
+  height: 500px;
+  display: flex;
+  align-items: top;
+  justify-content: center;
+}
+
+#tablesize {
+  border-collapse: collapse;
+  border: 3px solid black;
+  width: 35vw;
+  height: 55vh;
+}
+
+.figtext {
+  text-align: center;
+  font-weight: bold;
+}
+
+#figtips {
+  color: grey;
+}
+
+#topfig {
+  height: 10%;
+}
+
+#bottomfig {
+  padding-top: 52px;
+}
+
+#grade {
+  background-color: green;
+  border-bottom: 3px solid black;
+  border-right: 3px solid black;
+}
+
+#grade-thin {
+  background-color: lightgreen;
+  border-bottom: 3px solid black;
+}
+
+#five {
+  background-color: red;
+  border-right: 3px solid black;
+}
+
+#five-thin {
+  background-color: lightpink;
+}
+
+#four {
+  background-color: orange;
+  border-right: 3px solid black;
+}
+
+#four-thin {
+  background-color: rgb(239, 219, 182);
+}
+
+#three {
+  background-color: yellow;
+  border-right: 3px solid black;
+}
+
+#three-thin {
+  background-color: lightyellow;
+}
+
+#pretwo {
+  background-color: aqua;
+  border-right: 3px solid black;
+}
+
+#pretwo-thin {
+  background-color: rgb(193, 228, 228);
+}
+
+#two {
+  background-color: blue;
+  border-right: 3px solid black;
+}
+
+#two-thin {
+  background-color: lightblue;
+}
+
+#preone {
+  background-color: brown;
+  border-right: 3px solid black;
+}
+
+#preone-thin {
+  background-color: rgb(160, 101, 101);
+}
+
+#one {
+  background-color: maroon;
+  border-right: 3px solid black;
+}
+
+#one-thin {
+  background-color: rgb(117, 83, 83);
+}
+
+#rightimage {
+  padding-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 50%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+}
+
+#cefr {
+  width: 37vw;
+  height: 68vh;
+}
+
+.modal {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+#cefrexpand {
+  max-width: 60%;
+  max-height: 70%;
+}
+
+.error {
+  color: rgb(175, 16, 16);
+  font-weight: bold;
+}
+
+.true {
+  color: red;
+  font-weight: bold;
+}
+
+.false {
+  color: blue;
+  font-weight: bold;
+}
+
+button {
+  background-color: #8c95fa;
+  border-radius: 3px;
+}
+
+#clear {
+  margin-left: 1%;
+}
+
+#search {
+  margin-right: 1%;
+  width: 25%;
+  padding: 0.5%;
+}
+
+#searching {
+  color: gray;
+}
+
+#searchbutton {
+  width: 3rem;
+  height: 1.8rem;
+}
+
+@media(max-width:1024px) {
+  .flexdisplay3 {
+    height: 30%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #lefttable {
+    width: 100%;
+    height: auto;
+    padding-bottom: 2%;
+  }
+
+  #rightimage {
+    padding-top: 2%;
+    height: 30%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #cefr {
+    width: 70%;
+    height: 70%;
+  }
+
+  #cefrexpand {
+    width: 100%;
+    height: 50%;
+  }
+}
+
+@media (max-width: 800px) {
+  .flexdisplay2 {
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .level {
+    height: auto;
+    width: 25%;
+    font-size: 3vw;
+  }
+
+  .flexdisplay3 {
+    height: 30%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #lefttable {
+    width: 100%;
+    height: auto;
+  }
+
+  #rightimage {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #cefr {
+    width: 70%;
+    height: 70%;
+  }
+
+  #cefrexpand {
+    width: 100%;
+    height: 40%;
+  }
+}
+
+@media (max-width: 500px) {
+  .flexdisplay2 {
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .level {
+    height: auto;
+    width: 25%;
+    font-size: 3vw;
+  }
+
+  .flexdisplay3 {
+    height: 30%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #lefttable {
+    width: 100%;
+    height: auto;
+  }
+
+  #rightimage {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #cefr {
+    width: 70%;
+    height: 70%;
+  }
+
+  #cefrexpand {
+    width: 100%;
+    height: 30%;
+  }
 }
