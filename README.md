@@ -34,3 +34,5 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# englishtest_nextjs
+Javascript(Reactフレームワーク)、Typescript,Next.js App Routerを活用して、英単語・英熟語の問題集を作成しました。現在、レスポンシブデザインに対応済みです。
